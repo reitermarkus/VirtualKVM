@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		2840E5131DD8CD940054146D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2840E5151DD8CD940054146D /* Localizable.strings */; };
 		2854907C1DD8610800525808 /* KVMSystemProfiler.m in Sources */ = {isa = PBXBuildFile; fileRef = 2854907B1DD8610800525808 /* KVMSystemProfiler.m */; };
+		28B4E1011DEC1EC0003988C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B4E1001DEC1EC0003988C0 /* AppDelegate.m */; };
+		28B4E1041DEC1EC0003988C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B4E1031DEC1EC0003988C0 /* main.m */; };
+		28B4E1091DEC1EC0003988C0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28B4E1071DEC1EC0003988C0 /* MainMenu.xib */; };
+		28B4E1101DEC1F1C003988C0 /* VirtualKVMHelper.app in Copy Helper App */ = {isa = PBXBuildFile; fileRef = 28B4E0FD1DEC1EC0003988C0 /* VirtualKVMHelper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		47672946191BBD7200726705 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47672945191BBD7200726705 /* Cocoa.framework */; };
 		47672950191BBD7200726705 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4767294E191BBD7200726705 /* InfoPlist.strings */; };
 		47672952191BBD7200726705 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 47672951191BBD7200726705 /* main.m */; };
@@ -40,6 +44,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		28B4E10F1DEC1EEE003988C0 /* Copy Helper App */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				28B4E1101DEC1F1C003988C0 /* VirtualKVMHelper.app in Copy Helper App */,
+			);
+			name = "Copy Helper App";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1CDE0651EFEFF723A5BBA131 /* libPods-VirtualKVMTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VirtualKVMTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2673095FE54EC9E82407FA63 /* Pods-VirtualKVMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VirtualKVMTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VirtualKVMTests/Pods-VirtualKVMTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -50,6 +68,12 @@
 		2840E5141DD8CD940054146D /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		285490771DD8608200525808 /* KVMSystemProfiler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVMSystemProfiler.h; sourceTree = "<group>"; };
 		2854907B1DD8610800525808 /* KVMSystemProfiler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVMSystemProfiler.m; sourceTree = "<group>"; };
+		28B4E0FD1DEC1EC0003988C0 /* VirtualKVMHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirtualKVMHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28B4E0FF1DEC1EC0003988C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		28B4E1001DEC1EC0003988C0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		28B4E1031DEC1EC0003988C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		28B4E1081DEC1EC0003988C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		28B4E10A1DEC1EC0003988C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47672942191BBD7200726705 /* VirtualKVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirtualKVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47672945191BBD7200726705 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		47672948191BBD7200726705 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -72,7 +96,7 @@
 		47672979191BD44A00726705 /* KVMStatusItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVMStatusItem.h; sourceTree = "<group>"; };
 		4767297A191BD44A00726705 /* KVMStatusItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVMStatusItem.m; sourceTree = "<group>"; };
 		4767297C191BF05400726705 /* KVMController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVMController.h; sourceTree = "<group>"; };
-		4767297D191BF05400726705 /* KVMController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVMController.m; sourceTree = "<group>"; };
+		4767297D191BF05400726705 /* KVMController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVMController.m; sourceTree = "<group>"; tabWidth = 2; };
 		4767297F191C022900726705 /* KVMThunderboltObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVMThunderboltObserver.h; sourceTree = "<group>"; };
 		47672980191C022900726705 /* KVMThunderboltObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVMThunderboltObserver.m; sourceTree = "<group>"; };
 		47E96802191C3A17006531E1 /* KVMBluetoothController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVMBluetoothController.h; sourceTree = "<group>"; };
@@ -87,6 +111,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		28B4E0FA1DEC1EC0003988C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4767293F191BBD7200726705 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -110,6 +141,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28B4E0FE1DEC1EC0003988C0 /* VirtualKVMHelper */ = {
+			isa = PBXGroup;
+			children = (
+				28B4E0FF1DEC1EC0003988C0 /* AppDelegate.h */,
+				28B4E1001DEC1EC0003988C0 /* AppDelegate.m */,
+				28B4E1071DEC1EC0003988C0 /* MainMenu.xib */,
+				28B4E10A1DEC1EC0003988C0 /* Info.plist */,
+				28B4E1021DEC1EC0003988C0 /* Supporting Files */,
+			);
+			path = VirtualKVMHelper;
+			sourceTree = SOURCE_ROOT;
+		};
+		28B4E1021DEC1EC0003988C0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				28B4E1031DEC1EC0003988C0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		36829DEFAD624FCB6420C463 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				4767294B191BBD7200726705 /* VirtualKVM */,
+				28B4E0FE1DEC1EC0003988C0 /* VirtualKVMHelper */,
 				47672969191BBD7200726705 /* VirtualKVMTests */,
 				47672944191BBD7200726705 /* Frameworks */,
 				47672943191BBD7200726705 /* Products */,
@@ -137,6 +189,7 @@
 			children = (
 				47672942191BBD7200726705 /* VirtualKVM.app */,
 				47672963191BBD7200726705 /* VirtualKVMTests.xctest */,
+				28B4E0FD1DEC1EC0003988C0 /* VirtualKVMHelper.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -230,6 +283,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		28B4E0FC1DEC1EC0003988C0 /* VirtualKVMHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28B4E10D1DEC1EC0003988C0 /* Build configuration list for PBXNativeTarget "VirtualKVMHelper" */;
+			buildPhases = (
+				28B4E0F91DEC1EC0003988C0 /* Sources */,
+				28B4E0FA1DEC1EC0003988C0 /* Frameworks */,
+				28B4E0FB1DEC1EC0003988C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VirtualKVMHelper;
+			productName = VirtualKVMHelper;
+			productReference = 28B4E0FD1DEC1EC0003988C0 /* VirtualKVMHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
 		47672941191BBD7200726705 /* VirtualKVM */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 47672973191BBD7200726705 /* Build configuration list for PBXNativeTarget "VirtualKVM" */;
@@ -240,6 +310,7 @@
 				47672940191BBD7200726705 /* Resources */,
 				58C91F90D2DB4CDD08B23BE9 /* [CP] Embed Pods Frameworks */,
 				F1615B9E42373F1ACC0F6E6C /* [CP] Copy Pods Resources */,
+				28B4E10F1DEC1EEE003988C0 /* Copy Helper App */,
 			);
 			buildRules = (
 			);
@@ -281,6 +352,10 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Fast Wombat";
 				TargetAttributes = {
+					28B4E0FC1DEC1EC0003988C0 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
 					47672962191BBD7200726705 = {
 						TestTargetID = 47672941191BBD7200726705;
 					};
@@ -301,12 +376,21 @@
 			projectRoot = "";
 			targets = (
 				47672941191BBD7200726705 /* VirtualKVM */,
+				28B4E0FC1DEC1EC0003988C0 /* VirtualKVMHelper */,
 				47672962191BBD7200726705 /* VirtualKVMTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		28B4E0FB1DEC1EC0003988C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28B4E1091DEC1EC0003988C0 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		47672940191BBD7200726705 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -423,6 +507,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		28B4E0F91DEC1EC0003988C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28B4E1041DEC1EC0003988C0 /* main.m in Sources */,
+				28B4E1011DEC1EC0003988C0 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4767293E191BBD7200726705 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -465,6 +558,14 @@
 			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
+		28B4E1071DEC1EC0003988C0 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28B4E1081DEC1EC0003988C0 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
 		4767294E191BBD7200726705 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -504,6 +605,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		28B4E10B1DEC1EC0003988C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = VirtualKVMHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fastwombat.VirtualKVMHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		28B4E10C1DEC1EC0003988C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				INFOPLIST_FILE = VirtualKVMHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fastwombat.VirtualKVMHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		47672971191BBD7200726705 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -666,6 +805,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		28B4E10D1DEC1EC0003988C0 /* Build configuration list for PBXNativeTarget "VirtualKVMHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28B4E10B1DEC1EC0003988C0 /* Debug */,
+				28B4E10C1DEC1EC0003988C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4767293D191BBD7200726705 /* Build configuration list for PBXProject "VirtualKVM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
